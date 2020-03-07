@@ -5,5 +5,5 @@ import br.com.calculadora.dto.ResultadoDTO;
 
 public interface ResultadoService {
 
-	ResultadoDTO operacao(OperacaoDTO operacaoDTO);
+	ResultadoDTO resultado(OperacaoDTO operacaoDTO);
 }

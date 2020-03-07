@@ -29,27 +29,4 @@ public class OperacaoDTO {
 		this.operacao = operacao;
 		this.segundoNumero = segundoNumero;
 	}
-	
-	public String operar() {
-		Long resultado = 11L;
-		Long numeroPrimeiro = Long.parseLong(primeiroNumero);
-		Long numeroSegundo = Long.parseLong(segundoNumero);
-		String aqui = operacao;
-		
-		if(aqui.equals("+")) {
-			resultado = numeroPrimeiro+numeroSegundo;
-		}
-		else if (aqui.equals("*")) {
-			resultado = numeroPrimeiro*numeroSegundo;
-		}
-		else if (aqui.equals("/")) {
-			resultado = numeroPrimeiro/numeroSegundo;
-		}
-		else {
-			return "Não foi possível realizar a operação";
-		}
-		
-		
-		return String.valueOf(resultado);
-	}
 }
